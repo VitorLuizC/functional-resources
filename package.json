@@ -1,0 +1,32 @@
+{
+  "name": "functional-resources",
+  "version": "0.1.0",
+  "description": "Some pure-functions to deal with everything.",
+  "main": "./src/index.js",
+  "scripts": {
+    "check": "standard",
+    "test": "\"npm run check\" && mocha ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/functional.git"
+  },
+  "keywords": [
+    "functional"
+  ],
+  "author": {
+    "url": "https://vitorluizc.github.io/",
+    "name": "Vitor Cavalcanti",
+    "email": "vitorluizc@outlook.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/functional/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/functional#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "standard": "^10.0.2"
+  }
+}
