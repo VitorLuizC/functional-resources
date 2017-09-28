@@ -1,2 +1,4 @@
-exports.list = require('./list')
-exports.DOM = require('./DOM')
+import * as DOM from './DOM'
+import * as list from './list'
+
+export { DOM, list }

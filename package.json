@@ -2,10 +2,11 @@
   "name": "functional-resources",
   "version": "0.1.0",
   "description": "Some pure-functions to deal with everything.",
-  "main": "./src/index.js",
+  "main": "./dist/functional-resources.common.js",
+  "module": "./src/index.js",
   "scripts": {
-    "check": "standard",
-    "test": "\"npm run check\" && mocha ./test"
+    "test": "standard",
+    "build": "bili ./src/index.js -o ./dist"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,12 @@
   },
   "homepage": "https://github.com/VitorLuizC/functional#readme",
   "devDependencies": {
-    "chai": "^4.0.2",
-    "mocha": "^3.4.2",
+    "bili": "^0.18.1",
     "standard": "^10.0.2"
+  },
+  "standard": {
+    "ignore": [
+      "dist"
+    ]
   }
 }
